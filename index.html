@@ -32,8 +32,9 @@
 
     <div id="container">   
         <div id="top">
-            <input type="text" id="city" placeholder=" 🔎︎ Enter City Name">
-            <button onclick="getWeatherData()">Search</button>
+            <input class="In" type="text" id="city" placeholder=" 🔎︎ Enter City Name">
+            <button id="btn" onclick="getWeatherData()">Search</button>
+
         </div>    
         <div id="up">
             <div class="left">
@@ -56,6 +57,19 @@
             </div>
         </div>
         <div id="down"></div>
+    </div>
+
+    <!------------ 7 Days TEmperature Forecast -------->
+
+    <div class="container">
+        <div class="time">12:00 <span id="am_pm">PM</span></div> 
+        <!-- <h1>Forecast of 7 days</h1> -->
+        <!-- <h1>Search City</h1> -->
+        <!-- <div class="In"><input type="text" id="city"><button id="btn" onclick="getWeatherData()">Submit</button></div><br> -->
+        <div id="main">
+
+            </div>
+        </div>
     </div>
 
 </body>
