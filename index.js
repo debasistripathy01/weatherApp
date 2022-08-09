@@ -26,7 +26,7 @@ async function getWeatherData() {
         // console.log(city);
         let res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=${7}&appid=${Key}&units=metric`);
         let res1 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=7&appid=${Key}&units=metric`);
-        let res2 = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Key}&units=metric`);
+        let res2 = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Key}&units=metric`);
         // console.log(res1);
         // console.log(res2);
         
@@ -60,7 +60,7 @@ function showWeather(data) {
 
     main.innerHTML =
         `<div class="wetherforcast">
-    <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon" class="icon">
+    <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon" class="icon">
     <div class="day">Monday</div>
     <div class="temp_N">Night - ${data.list[0].main.temp_min}&#176; C</div>
     <div class="temp_D">Day -${data.list[0].main.temp_max}&#176; C</div>
@@ -68,7 +68,7 @@ function showWeather(data) {
 <div class="wetherforcast">
     <div class="wItems">
         <div class="day">Tuesday</div>
-        <img src="http://openweathermap.org/img/wn/02n@2x.png" alt="weather_icon" class="icon">
+        <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="weather_icon" class="icon">
         <div class="temp_N">Night - ${data.list[1].main.temp_min}&#176; C</div>
         <div class="temp_D">Day -${data.list[1].main.temp_max}&#176; C</div>
     </div>
@@ -76,7 +76,7 @@ function showWeather(data) {
 <div class="wetherforcast">
     <div class="wItems">
         <div class="day">Wednesday</div>
-        <img src="http://openweathermap.org/img/wn/11d@2x.png" alt="weather_icon" class="icon">
+        <img src="https://openweathermap.org/img/wn/11d@2x.png" alt="weather_icon" class="icon">
         <div class="temp_N">Night - ${data.list[2].main.temp_min}&#176; C</div>
         <div class="temp_D">Day -${data.list[2].main.temp_max}&#176; C</div>
     </div>
@@ -84,7 +84,7 @@ function showWeather(data) {
 <div class="wetherforcast">
     <div class="wItems">
         <div class="day">Thursday</div>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon" class="icon">
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon" class="icon">
         <div class="temp_N">Night - ${data.list[3].main.temp_min}&#176; C</div>
         <div class="temp_D">Day -${data.list[3].main.temp_max}&#176; C</div>
     </div>
@@ -92,7 +92,7 @@ function showWeather(data) {
 <div class="wetherforcast">
     <div class="wItems">
         <div class="day">Friday</div>
-        <img src="http://openweathermap.org/img/wn/03n@2x.png" alt="weather_icon" class="icon">
+        <img src="https://openweathermap.org/img/wn/03n@2x.png" alt="weather_icon" class="icon">
         <div class="temp_N">Night - ${data.list[4].main.temp_min}&#176; C</div>
         <div class="temp_D">Day -${data.list[4].main.temp_max}&#176; C</div>
     </div>
@@ -100,7 +100,7 @@ function showWeather(data) {
 <div class="wetherforcast">
     <div class="wItems">
         <div class="day">Saturday</div>
-        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon" class="icon">
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon" class="icon">
         <div class="temp_N">Night - ${data.list[5].main.temp_min}&#176; C</div>
         <div class="temp_D">Day -${data.list[5].main.temp_max}&#176; C</div>
     </div>
@@ -108,7 +108,7 @@ function showWeather(data) {
 <div class="wetherforcast">
     <div class="wItems">
         <div class="day">Sunday</div>
-        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon" class="icon">
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="weather_icon" class="icon">
         <div class="temp_N">Night - ${data.list[6].main.temp_min}&#176; C</div>
         <div class="temp_D">Day -${data.list[6].main.temp_max}&#176; C</div>
     </div>
